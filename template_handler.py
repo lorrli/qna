@@ -26,7 +26,7 @@ def main():
             capture_group = match.groups()
             print("found: ", re.search(used_pattern, base_str).group())
         else:
-            print("noo")
+            print("did not find any matches")
     
     result = what_is_template.response_pattern.format(capture_group[0], capture_group[0])
     print(result)
